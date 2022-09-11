@@ -120,7 +120,7 @@
             </a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link active" href="diklat.html">
+            <a class="nav-link " href="diklat.html">
               <span data-feather="file" class="align-text-bottom"></span>
               Diklat
             </a>
@@ -132,7 +132,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="jenis_diklat.html">
+            <a class="nav-link active" href="jenis_diklat.html">
               <span data-feather="file" class="align-text-bottom"></span>
               Jenis Diklat
             </a>
@@ -325,7 +325,7 @@
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Diklat</h1>  
+        <h1 class="h2">Jenis Diklat</h1>  
       </div>
  
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tambah Data </button>
@@ -335,54 +335,27 @@
         <thead>
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Judul Diklat</th>
-            <th scope="col">Tanggal Mulai</th>
-            <th scope="col">Tanggal Akhir</th>
-            <th scope="col">Jenis Diklat</th>
+            <th scope="col">Jenis Diklat</th>  
             <th scope="col">Opsi</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
+            <td>Diklat Kepemimpinan</td> 
             <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
+            <td>Diklat Pemahaman Materi</td> 
             <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
+            <td>Diklat Intelegensi</td> 
             <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
           </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
-            <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
-            <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
-          </tr>
+         
         </tbody>
       </table>
     </main>
@@ -399,25 +372,10 @@
       </div>
       <div class="modal-body">
         <div class="mb-6">
-          <label for="judul_diklat" class="form-label">Judul Diklat</label>
-          <input type="text" class="form-control" id="judul_diklat">
+          <label for="jenis_diklat" class="form-label">Jenis Diklat</label>
+          <input type="text" class="form-control" id="jenis_diklat">
         </div>
-        <div class="mb-6">
-          <label for="jadwal_mulai" class="form-label">Jadwal Mulai</label>
-          <input type="text" class="form-control datepicker" id="jadwal_mulai">
-        </div>
-        <div class="mb-6">
-          <label for="jadwal_akhir" class="form-label">Jadwal Akhir</label>
-          <input type="text" class="form-control datepicker" id="jadwal_akhir">
-        </div>
-        <div class="mb-6">
-          <label for="jadwal_akhir" class="form-label">Jadwal Akhir</label>
-        <select name="id_jenis_diklat" class="form-control" id="id_jenis_diklat">
-          <option value="" selected>--Pilih--</option>
-          <option value="1">Kepemimpinan</option>
-          <option value="2">Kekuatan</option>
-        </select>
-        </div>
+        
         
       </div>
       <div class="modal-footer">

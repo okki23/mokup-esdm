@@ -114,13 +114,13 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="peserta.html">
+            <a class="nav-link active" href="peserta.html">
               <span data-feather="file" class="align-text-bottom"></span>
               Peserta
             </a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link active" href="diklat.html">
+            <a class="nav-link " href="diklat.html">
               <span data-feather="file" class="align-text-bottom"></span>
               Diklat
             </a>
@@ -325,64 +325,53 @@
 
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
       <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="h2">Diklat</h1>  
+        <h1 class="h2">Peserta</h1>  
       </div>
  
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Tambah Data </button>
       <br>
       &nbsp;
       <table class="table caption-top" id="myTable"> 
-        <thead>
+        <thead> 
           <tr>
             <th scope="col">No</th>
-            <th scope="col">Judul Diklat</th>
-            <th scope="col">Tanggal Mulai</th>
-            <th scope="col">Tanggal Akhir</th>
-            <th scope="col">Jenis Diklat</th>
+            <th scope="col">Nomor Peserta</th>
+            <th scope="col">Nama Peserta</th>
+            <th scope="col">Email</th>
+            <th scope="col">Telp</th>
+            <th scope="col">Unit</th>
             <th scope="col">Opsi</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">1</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
+            <td>672342</td>
+            <td>Sapta</td>
+            <td>sapta@mail.com</td>
+            <td>782234234</td>
+            <td>MIS</td>
             <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
           </tr>
           <tr>
             <th scope="row">2</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
+            <td>573452</td>
+            <td>Inoy</td>
+            <td>inoy@mail.com</td>
+            <td>782234234</td>
+            <td>Manajemen HR</td>
             <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
           </tr>
           <tr>
             <th scope="row">3</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
+            <td>34326242</td>
+            <td>Okki</td>
+            <td>okki@mail.com</td>
+            <td>5234341</td>
+            <td>MIS</td>
             <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
           </tr>
-          <tr>
-            <th scope="row">4</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
-            <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
-          </tr>
-          <tr>
-            <th scope="row">5</th>
-            <td>Diklat Kepemimpinan</td>
-            <td>20 Oktober 2022</td>
-            <td>22 Oktober 2022</td>
-            <td>Leadership</td>
-            <td> <button class="btn btn-warning btn-sm"> Ubah </button> &nbsp; <button class="btn btn-danger btn-sm"> Hapus </button></td>
-          </tr>
+          
         </tbody>
       </table>
     </main>
@@ -399,23 +388,27 @@
       </div>
       <div class="modal-body">
         <div class="mb-6">
-          <label for="judul_diklat" class="form-label">Judul Diklat</label>
-          <input type="text" class="form-control" id="judul_diklat">
+          <label for="nomor_peserta" class="form-label">Nomor Peserta</label>
+          <input type="text" class="form-control" id="nomor_peserta">
         </div>
         <div class="mb-6">
-          <label for="jadwal_mulai" class="form-label">Jadwal Mulai</label>
-          <input type="text" class="form-control datepicker" id="jadwal_mulai">
+          <label for="nama_peserta" class="form-label">Nama Peserta</label>
+          <input type="text" class="form-control" id="nama_peserta">
         </div>
         <div class="mb-6">
-          <label for="jadwal_akhir" class="form-label">Jadwal Akhir</label>
-          <input type="text" class="form-control datepicker" id="jadwal_akhir">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email">
         </div>
         <div class="mb-6">
-          <label for="jadwal_akhir" class="form-label">Jadwal Akhir</label>
-        <select name="id_jenis_diklat" class="form-control" id="id_jenis_diklat">
+          <label for="email" class="form-label">Telp</label>
+          <input type="text" class="form-control" id="telp">
+        </div>
+        <div class="mb-6">
+          <label for="id_unit" class="form-label">Unit</label>
+        <select name="id_unit" class="form-control" id="id_unit">
           <option value="" selected>--Pilih--</option>
-          <option value="1">Kepemimpinan</option>
-          <option value="2">Kekuatan</option>
+          <option value="1">Manajemen HR</option>
+          <option value="2">MIS</option>
         </select>
         </div>
         
